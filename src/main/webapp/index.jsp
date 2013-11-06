@@ -47,7 +47,7 @@
                             <%
                                 if (oUserBean != null) {
                             %>
-                            Estás logueado como <%=oUserBean.getNombre()%>&nbsp;&nbsp;&nbsp;&nbsp;
+                            Estás logueado como <%=oUserBean.getLogin()%>&nbsp;&nbsp;&nbsp;&nbsp;
                             <a class="navbar-link" href="Controller?class=usuario&method=logout">(Salir del sistema)</a>
                             <%
                             } else {

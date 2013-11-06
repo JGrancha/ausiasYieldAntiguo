@@ -29,7 +29,7 @@ public class UsuarioLogin2 implements Operation {
         oUsuario2.setLogin(oUsuario1.getLogin());
         oUsuario2 = oUsuarioDao.getFromLogin(oUsuario2);
         if (oUsuario2.getId() != 0 && oUsuario2.getPassword().equals(oUsuario1.getPassword())) {            
-            result = "Bienvenido/a " + oUsuario2.getNombre() + " Has entrado en la aplicación. Ahora puedes operar con los menús.";
+            result = "Bienvenido/a " + oUsuario2.getLogin()+ " Has entrado en la aplicación. Ahora puedes operar con los menús.";
             request.getSession().setAttribute("usuarioBean", oUsuario2);
         } else {
             result = "Login o password incorrectos. No has entrado en la aplicación.";
