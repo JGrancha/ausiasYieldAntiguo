@@ -160,9 +160,9 @@
         <td>
             <div class="btn-toolbar">
                 <div class="btn-group">                    
-                    <a class="btn btn-mini" href="Controller?class=cliente&method=view&id=<%=oAlumnoBean.getId()%>"><i class="icon-eye-open"></i></a>                    
-                    <a class="btn btn-mini" href="Controller?class=cliente&method=update&id=<%=oAlumnoBean.getId()%>"><i class="icon-pencil"></i></a>           
-                    <a class="btn btn-mini" href="Controller?class=cliente&method=remove&id=<%=oAlumnoBean.getId()%>"><i class="icon-trash"></i></a>                         
+                    <a class="btn btn-mini" href="Controller?class=alumno&method=view&id=<%=oAlumnoBean.getId()%>"><i class="icon-eye-open"></i></a>                    
+                    <a class="btn btn-mini" href="Controller?class=alumno&method=update&id=<%=oAlumnoBean.getId()%>"><i class="icon-pencil"></i></a>           
+                    <a class="btn btn-mini" href="Controller?class=alumno&method=remove&id=<%=oAlumnoBean.getId()%>"><i class="icon-trash"></i></a>                         
                 </div>
             </div>
         </td>
