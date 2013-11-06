@@ -48,12 +48,22 @@
                 <fieldset>                                               
                     <%=oContexto.getSerializedParamsExceptFilterFormFormat()%>       
                     <span>
-                        <select id="filter" name="filter" width="80" style="width: 80px">
-                            <option>id</option>
-                            <option>nombre</option>
-                            <option>ape1</option>
-                            <option>ape2</option>
-                            <option>email</option>
+                        <select id="filter" name="filter" width="80" style="width: 100px">
+                            <option value="id">Id</option>
+                            <option value="id_usuario">Id Usuario</option>
+                            <option value="dni">DNI</option>
+                            <option value="numexpediente">Núm. Expediente</option>
+                            <option value="nombre">Nombre</option>
+                            <option value="ape1">1er Apellido</option>
+                            <option value="ape2">2º Apellido</option>
+                            <option value="sexo">Sexo</option>
+                            <option value="domicilio">Domicilio</option>
+                            <option value="codpostal">C. Postal</option>
+                            <option value="poblacion">Población</option>
+                            <option value="provincia">Provincia</option>
+                            <option value="telefono">Teléfono</option>
+                            <option value="email">Em@il</option>
+                            <option value="validado">Validado</option>
                         </select>                        
                         <input id="filtervalue" name="filtervalue" type="text" size="20" maxlength="50" value=""  width="100" style="width: 100px"/>
                     </span>
@@ -66,9 +76,21 @@
 </div>
 <table class="table table-hover table-condensed">
     <tr>
-        <th>id
+        <th>Id
             <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=id&ordervalue=asc"><i class="icon-arrow-up"></i></a>
             <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=id&ordervalue=desc"><i class="icon-arrow-down"></i></a>
+        </th>
+        <th>Id Usuario
+            <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=id_usuario&ordervalue=asc"><i class="icon-arrow-up"></i></a>
+            <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=id_usuario&ordervalue=desc"><i class="icon-arrow-down"></i></a>
+        </th>
+        <th>DNI
+            <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=dni&ordervalue=asc"><i class="icon-arrow-up"></i></a>
+            <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=dni&ordervalue=desc"><i class="icon-arrow-down"></i></a>
+        </th>
+        <th>Número Expediente
+            <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=numexpediente&ordervalue=asc"><i class="icon-arrow-up"></i></a>
+            <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=numexpediente&ordervalue=desc"><i class="icon-arrow-down"></i></a>
         </th>
         <th>Nombre
             <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=nombre&ordervalue=asc"><i class="icon-arrow-up"></i></a>
@@ -82,9 +104,37 @@
             <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=ape2&ordervalue=asc"><i class="icon-arrow-up"></i></a>
             <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=ape2&ordervalue=desc"><i class="icon-arrow-down"></i></a>        
         </th>
+        <th>Sexo
+            <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=sexo&ordervalue=asc"><i class="icon-arrow-up"></i></a>
+            <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=sexo&ordervalue=desc"><i class="icon-arrow-down"></i></a>
+        </th>
+        <th>Domicilio
+            <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=domicilio&ordervalue=asc"><i class="icon-arrow-up"></i></a>
+            <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=domicilio&ordervalue=desc"><i class="icon-arrow-down"></i></a>
+        </th>
+        <th>Código Postal
+            <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=codpostal&ordervalue=asc"><i class="icon-arrow-up"></i></a>
+            <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=codpostal&ordervalue=desc"><i class="icon-arrow-down"></i></a>
+        </th>
+        <th>Población
+            <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=poblacion&ordervalue=asc"><i class="icon-arrow-up"></i></a>
+            <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=poblacion&ordervalue=desc"><i class="icon-arrow-down"></i></a>
+        </th>
+        <th>Provincia
+            <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=provincia&ordervalue=asc"><i class="icon-arrow-up"></i></a>
+            <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=provincia&ordervalue=desc"><i class="icon-arrow-down"></i></a>
+        </th>
+        <th>Teléfono
+            <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=telefono&ordervalue=asc"><i class="icon-arrow-up"></i></a>
+            <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=telefono&ordervalue=desc"><i class="icon-arrow-down"></i></a>
+        </th>
         <th>em@il
             <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=email&ordervalue=asc"><i class="icon-arrow-up"></i></a>
             <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=email&ordervalue=desc"><i class="icon-arrow-down"></i></a>         
+        </th>
+        <th>Validado
+            <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=validado&ordervalue=asc"><i class="icon-arrow-up"></i></a>
+            <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=validado&ordervalue=desc"><i class="icon-arrow-down"></i></a>
         </th>
         <th>Operaciones</th>
     </tr>
@@ -93,10 +143,20 @@
     %>
     <tr>
         <td><%=oAlumnoBean.getId()%></td>
+        <td><%=oAlumnoBean.getId_usuario()%></td>
+        <td><%=oAlumnoBean.getDni()%></td>
+        <td><%=oAlumnoBean.getNumexpediente()%></td>
         <td><%=oAlumnoBean.getNombre()%></td>
         <td><%=oAlumnoBean.getApe1()%></td>
         <td><%=oAlumnoBean.getApe2()%></td>
+        <td><%=oAlumnoBean.getSexo()%></td>
+        <td><%=oAlumnoBean.getDomicilio()%></td>
+        <td><%=oAlumnoBean.getCodpostal()%></td>
+        <td><%=oAlumnoBean.getPoblacion()%></td>
+        <td><%=oAlumnoBean.getProvincia()%></td>
+        <td><%=oAlumnoBean.getTelefono()%></td>
         <td><%=oAlumnoBean.getEmail()%></td>
+        <td><%=oAlumnoBean.getValidado()%></td>
         <td>
             <div class="btn-toolbar">
                 <div class="btn-group">                    
