@@ -99,7 +99,7 @@ public class AlumnoDao {
             oMysql.conexion(enumTipoConexion);
             oMysql.initTrans();
             if (oAlumnoBean.getId() == 0) {
-                oAlumnoBean.setId(oMysql.insertOne("alumno"));
+                oAlumnoBean.setId(oMysql.insertOne("alumno"));            
             }
             oMysql.updateOne(oAlumnoBean.getId(), "alumno", "id_usuario", Integer.toString(oAlumnoBean.getId_usuario()));
             oMysql.updateOne(oAlumnoBean.getId(), "alumno", "dni", oAlumnoBean.getDni());

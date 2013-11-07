@@ -56,6 +56,7 @@
                             <option value="nombre">Nombre</option>
                             <option value="ape1">1er Apellido</option>
                             <option value="ape2">2º Apellido</option>
+                            <!--
                             <option value="sexo">Sexo</option>
                             <option value="domicilio">Domicilio</option>
                             <option value="codpostal">C. Postal</option>
@@ -64,6 +65,7 @@
                             <option value="telefono">Teléfono</option>
                             <option value="email">Em@il</option>
                             <option value="validado">Validado</option>
+                            -->
                         </select>                        
                         <input id="filtervalue" name="filtervalue" type="text" size="20" maxlength="50" value=""  width="100" style="width: 100px"/>
                     </span>
@@ -104,6 +106,7 @@
             <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=ape2&ordervalue=asc"><i class="icon-arrow-up"></i></a>
             <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=ape2&ordervalue=desc"><i class="icon-arrow-down"></i></a>        
         </th>
+        <!--
         <th>Sexo
             <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=sexo&ordervalue=asc"><i class="icon-arrow-up"></i></a>
             <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=sexo&ordervalue=desc"><i class="icon-arrow-down"></i></a>
@@ -136,6 +139,7 @@
             <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=validado&ordervalue=asc"><i class="icon-arrow-up"></i></a>
             <a href="Controller?<%=oContexto.getSerializedParamsExceptOrder()%>&order=validado&ordervalue=desc"><i class="icon-arrow-down"></i></a>
         </th>
+        -->
         <th>Operaciones</th>
     </tr>
     <%        while (oIterador.hasNext()) {
@@ -149,6 +153,7 @@
         <td><%=oAlumnoBean.getNombre()%></td>
         <td><%=oAlumnoBean.getApe1()%></td>
         <td><%=oAlumnoBean.getApe2()%></td>
+        <!--
         <td><%=oAlumnoBean.getSexo()%></td>
         <td><%=oAlumnoBean.getDomicilio()%></td>
         <td><%=oAlumnoBean.getCodpostal()%></td>
@@ -157,6 +162,7 @@
         <td><%=oAlumnoBean.getTelefono()%></td>
         <td><%=oAlumnoBean.getEmail()%></td>
         <td><%=oAlumnoBean.getValidado()%></td>
+        -->
         <td>
             <div class="btn-toolbar">
                 <div class="btn-group">                    

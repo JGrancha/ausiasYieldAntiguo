@@ -56,7 +56,7 @@
     <fieldset>
         <legend>Formulario de Alumno</legend>
         <input type="hidden" name="id" value="<%=id%>" /> 
-        <input type="hidden" name="class" value="cliente" /> 
+        <input type="hidden" name="class" value="alumno" /> 
         <input type="hidden" name="method" value="<%=oContexto.getMetodo()%>" /> 
         <input type="hidden" name="phase" value="2" />
         <div class="control-group">

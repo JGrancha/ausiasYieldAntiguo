@@ -110,7 +110,7 @@ public class Contexto {
     }
 
     public Integer getNrpp() {
-        return Integer.parseInt(get("10", "nrpp"));
+        return Integer.parseInt(get("5", "nrpp"));
     }
 
     public void setNrpp(Integer intNrpp) {
