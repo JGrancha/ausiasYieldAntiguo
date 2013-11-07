@@ -23,6 +23,16 @@ public class UsuarioDao {
             } else {
                 oUsuario.setId(Integer.parseInt(strId));
                 oUsuario.setPassword(oMysql.getOne("usuario", "password", oUsuario.getId()));
+
+                String strIdAlumno = oMysql.getId("alumno", "id_usuario", Integer.toString(oUsuario.getId()));
+                if (strIdAlumno == null) {
+                    String strIdEmpresa = oMysql.getId("empresa", "id_usuario", Integer.toString(oUsuario.getId()));
+                    if (strIdEmpresa == null) {
+                        String strIdProfesor = oMysql.getId("profesor", "id_usuario", Integer.toString(oUsuario.getId()));
+                    }
+
+                }
+                
             }
             oMysql.desconexion();
             return oUsuario;
