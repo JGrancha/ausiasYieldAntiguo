@@ -96,9 +96,12 @@
             </div>
         </div>
         <div class="control-group">
-            <label class="control-label" for="sexo">Sexo: </label> 
+            <label class="control-label" for="sexo">Sexo: </label>
             <div class="controls">
-                <input <%=strControlEnabled%> id="sexo" name="sexo" type="text" size="30" maxlength="50" autofocus="autofocus" value="<%=sexo%>" /><br />
+                <select <%=strControlEnabled%> id="sexo" name="sexo" type="text" autofocus="autofocus" value="<%=sexo%>" >
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                </select>
             </div>
         </div>
         <div class="control-group">
@@ -138,9 +141,12 @@
             </div>
         </div>
         <div class="control-group">
-            <label class="control-label" for="validado">Validado: </label> 
+            <label class="control-label" for="validado">Validado: </label>
             <div class="controls">
-                <input <%=strControlEnabled%> id="validado" name="validado" type="text" size="30" maxlength="50" autofocus="autofocus" value="<%=validado%>" /><br />
+                <select <%=strControlEnabled%> id="validado" name="validado" type="text" autofocus="autofocus" value="<%=validado%>" >
+                    <option value="Si">Si</option>
+                    <option value="No">No</option>
+                </select>
             </div>
         </div>
         <div class="control-group">
